@@ -2,10 +2,13 @@
 @import "../variables.scss";
 @import "../typography.scss";
 
-.foo-bar {
+.button {
   @include font-defaults;
 
   color: $harvey-green;
   margin: 20px;
   font-weight: bold;
+  &:hover{
+    background-color: antiquewhite;
+  }
 }

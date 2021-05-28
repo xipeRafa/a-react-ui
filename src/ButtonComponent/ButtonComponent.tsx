@@ -6,7 +6,7 @@ import { ButtonComponentProps } from "./ButtonComponent.types";
 import "./ButtonComponent.scss";
 
 const ButtonComponent: React.FC<ButtonComponentProps> = ({ label }) => (
-    <input type='button' data-testid="ButtonComponent" className="foo-bar" value={label} />
+    <input type='button' data-testid="ButtonComponent" className="button" value={label} />
 );
 
 export default ButtonComponent;
