@@ -1,3 +1,13 @@
+export const parameters = {
+      actions: { argTypesRegex: "^on[A-Z].*" },
+      controls: {
+        matchers: {
+          color: /(background|color)$/i,
+          date: /Date$/,
+        },
+      },
+    }
+    
 /**
  * Read https://storybook.js.org/docs/react/configure/overview#configure-story-rendering
  * for more information about the purpose of this file.
@@ -66,12 +76,3 @@
  * Will add a new dropdown in your toolbar with options light and dark.
  **/
 
- export const parameters = {
-      actions: { argTypesRegex: "^on[A-Z].*" },
-      controls: {
-        matchers: {
-          color: /(background|color)$/i,
-          date: /Date$/,
-        },
-      },
-    }
