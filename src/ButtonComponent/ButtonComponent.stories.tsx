@@ -6,6 +6,6 @@ export default {
     title: "ButtonComponent"
 };
 
-export const button1 = () => <ButtonComponent label="Button1" />;
+export const Button1 = () => <ButtonComponent label="Button1" />;
 
-export const button2 = () => <ButtonComponent label="button2" />;
+export const Button2 = () => <ButtonComponent label="button2" />;
