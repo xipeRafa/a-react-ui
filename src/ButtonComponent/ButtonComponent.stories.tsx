@@ -1,11 +1,38 @@
-// Generated with util/create-component.js
-import React from "react";
-import ButtonComponent from "./ButtonComponent";
+import React from 'react';
+import { Story, Meta } from '@storybook/react';
+
+import { ButtonComponent} from './ButtonComponent';
+import { ButtonComponentProps } from "./ButtonComponent.types";
 
 export default {
-    title: "ButtonComponent"
+  title: 'Material UI Button',
+  component: ButtonComponent,
+  argTypes: {
+    backgroundColor: { control: 'color' },
+  },
+} as Meta;
+
+const Template: Story<ButtonComponentProps> = (args) => <ButtonComponent {...args} />;
+
+export const Primary = Template.bind({});
+Primary.args = {
+  primary: true,
+  label: 'Button',
 };
 
-export const Button1 = () => <ButtonComponent label="Button1" />;
+export const Secondary = Template.bind({});
+Secondary.args = {
+  label: 'Button',
+};
 
-export const Button2 = () => <ButtonComponent label="button2" />;
+export const Large = Template.bind({});
+Large.args = {
+  size: 'large',
+  label: 'Button',
+};
+
+export const Small = Template.bind({});
+Small.args = {
+  size: 'small',
+  label: 'Button',
+};
