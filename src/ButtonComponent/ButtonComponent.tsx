@@ -2,7 +2,13 @@ import React from 'react';
 import './ButtonComponent.scss';
 import Button from '@material-ui/core/Button';
 
-import { ButtonComponentProps } from "./ButtonComponent.types";
+export interface ButtonComponentProps {
+  primary?: boolean;
+  backgroundColor?: string;
+  size?: 'small' | 'medium' | 'large';
+  label: string;
+  onClick?: () => void;
+}
 
 export const ButtonComponent: React.FC<ButtonComponentProps> = ({
   primary = false,

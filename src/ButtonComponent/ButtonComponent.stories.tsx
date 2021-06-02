@@ -2,7 +2,7 @@ import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
 import { ButtonComponent} from './ButtonComponent';
-import { ButtonComponentProps } from "./ButtonComponent.types";
+import { ButtonComponentProps } from "./ButtonComponent";
 
 export default {
   title: 'Material UI Button',

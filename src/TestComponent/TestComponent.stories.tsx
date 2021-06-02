@@ -8,3 +8,5 @@ export default {
 export const Primary = () => <TestComponent theme="primary" />;
 
 export const Secondary = () => <TestComponent theme="secondary" />;
+
+
