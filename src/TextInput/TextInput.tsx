@@ -1,7 +1,7 @@
 import React from 'react';
 import './TextInput.scss';
 
-interface TextInputProps {
+export interface TextInputProps {
   primary?: boolean;
   backgroundColor?: string;
   size?: 'small' | 'medium' | 'large';

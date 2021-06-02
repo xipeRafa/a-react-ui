@@ -2,15 +2,7 @@ import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
 import { TextInput} from './TextInput';
-
-interface TextInputProps {
-  primary?: boolean;
-  backgroundColor?: string;
-  size?: 'small' | 'medium' | 'large';
-  label: string;
-  onClick?: () => void;
-}
-
+import { TextInputProps} from './TextInput';
 
 export default {
   title: 'TextInput',
