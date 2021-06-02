@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 
 import {H4, H5, H6, Subtitle1, Body1, Caption, Overline} from '../typography'
-import {large, small} from '../sizes'
-import { black, white, red, blue, primary } from '../colors'
+import {large} from '../sizes'
+import { black, white, blue } from '../colors'
 
 export interface TestComponentProps {
   theme: "primary" | "secondary";
@@ -17,7 +17,7 @@ export interface TestComponentProps {
    padding: ${large}px;
 
    background-color:${white}; //primary-color
-   
+
    ${(props) => props.theme === 'secondary' && `background-color: ${blue};`}//secondary-color
 `
 
