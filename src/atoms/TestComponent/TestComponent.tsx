@@ -1,6 +1,8 @@
 import React from "react";
 
-import { TestComponentProps } from "./TestComponent.types";
+export interface TestComponentProps {
+  theme: "primary" | "secondary";
+}
 
 import "./TestComponent.scss";
 
