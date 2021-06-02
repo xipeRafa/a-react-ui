@@ -2,14 +2,7 @@ import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
 import { ButtonComponent} from './ButtonComponent';
-
-interface ButtonComponentProps {
-  primary?: boolean;
-  backgroundColor?: string;
-  size?: 'small' | 'medium' | 'large';
-  label: string;
-  onClick?: () => void;
-}
+import { ButtonComponentProps } from "./ButtonComponent.types";
 
 export default {
   title: 'Material UI Button',
