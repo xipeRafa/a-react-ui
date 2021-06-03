@@ -2,20 +2,19 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import styled from 'styled-components'
 
-import {large,med,xlarge,small} from '../sizes'
-import { black, white, blue, red } from '../colors'
+import {med,xlarge,small} from '../sizes'
+import { black, white, secondary, primary } from '../colors'
 
 const StyledButton = styled(Button)<ButtonComponentProps>`
     
-     color:${black};
-     background-color:${red}; //primary-color
-      ${(props) => props.primary === false && `background-color: ${blue};`} //secondary-color
+      color:${black};
+      background-color:${primary}; 
+      ${(props) => props.primary === false && `background-color: ${secondary};`} 
       ${(props) => props.primary === true && `color:${white};`}
-     
-     ${(props) => props.size === 'large' && `padding: 20px;`}
-     ${(props) => props.size === 'medium' && `padding: 12px;`}
-     ${(props) => props.size === 'small' && `padding: 8px;`}
-    
+      
+      ${(props) => props.size === 'large' && `padding: ${xlarge}px;`}
+      ${(props) => props.size === 'medium' && `padding: ${med}px;`}
+      ${(props) => props.size === 'small' && `padding: ${small}px;font-size:${small+4}px!important`}
 `
 
 export interface ButtonComponentProps {

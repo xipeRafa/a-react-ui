@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 import {H4, H5, H6, Subtitle1, Body1, Caption, Overline} from '../typography'
 import {large} from '../sizes'
-import { black, white, blue } from '../colors'
+import { black,primary, almond} from '../colors'
 
 export interface TestComponentProps {
   theme: "primary" | "secondary";
@@ -16,9 +16,9 @@ export interface TestComponentProps {
    width: 20%;
    padding: ${large}px;
 
-   background-color:${white}; //primary-color
+   background-color:${primary}; //primary-color
 
-   ${(props) => props.theme === 'secondary' && `background-color: ${blue};`}//secondary-color
+   ${(props) => props.theme === 'secondary' && `background-color: ${almond};`}//secondary-color
 `
 
 const TestComponent: React.FC<TestComponentProps> = ({ theme }) => (
