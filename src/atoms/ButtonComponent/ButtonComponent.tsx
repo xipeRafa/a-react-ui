@@ -2,8 +2,8 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import styled from 'styled-components'
 
-import {med,xlarge,small} from '../sizes'
-import { black, white, secondary, primary } from '../colors'
+import {med,xlarge,small} from '../../base/sizes'
+import { black, white, secondary, primary } from '../../base/colors'
 
 const StyledButton = styled(Button)<ButtonComponentProps>`
     

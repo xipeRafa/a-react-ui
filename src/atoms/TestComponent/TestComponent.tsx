@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 
-import {H4, H5, H6, Subtitle1, Body1, Caption, Overline} from '../typography'
-import {large} from '../sizes'
-import { black,primary, almond} from '../colors'
+import {H4, H5, H6, Subtitle1, Body1, Caption, Overline} from '../../base/typography'
+import {large} from '../../base/sizes'
+import { black,primary, almond} from '../../base/colors'
 
 export interface TestComponentProps {
   theme: "primary" | "secondary";
