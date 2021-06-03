@@ -3,18 +3,18 @@ import Button from '@material-ui/core/Button';
 import styled from 'styled-components'
 
 import {large,med,xlarge,small} from '../sizes'
-import { black, white, blue } from '../colors'
+import { black, white, blue, red } from '../colors'
 
 const StyledButton = styled(Button)<ButtonComponentProps>`
     
      color:${black};
-     background-color:${white}; //primary-color
+     background-color:${red}; //primary-color
       ${(props) => props.primary === false && `background-color: ${blue};`} //secondary-color
-
+      ${(props) => props.primary === true && `color:${white};`}
      
-     ${(props) => props.size === "large" && `padding: 20px;`}
-     ${(props) => props.size === "medium" && `padding: 10px;`}
-     ${(props) => props.size === "small" && `padding: 2px;`}
+     ${(props) => props.size === 'large' && `padding: 20px;`}
+     ${(props) => props.size === 'medium' && `padding: 12px;`}
+     ${(props) => props.size === 'small' && `padding: 8px;`}
     
 `
 
@@ -36,6 +36,7 @@ export const ButtonComponent: React.FC<ButtonComponentProps> = ({
   
   return (
     <StyledButton
+         size={size}
          primary={primary}
          style={{ backgroundColor }}
          {...props}
